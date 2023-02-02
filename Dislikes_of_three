@@ -1,0 +1,26 @@
+import java.util.*;
+public class dislikeThree{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+       // System.out.println("enter the no of test cases:");
+        int n=s.nextInt();
+        int count=0;
+        for(int i=1;i<=n;i++){
+            int p=s.nextInt();
+            int j=1;
+            count=0;
+            while(j<=100000){
+                int m=j;
+                if(m%3!=0 && m%10!=3){
+                    count+=1;
+                    if(count==p){
+                        System.out.println(m);
+                        
+                    }
+                }
+                j+=1;
+            }
+        }
+        
+    }
+}
