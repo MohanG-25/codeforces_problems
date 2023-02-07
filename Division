@@ -1,0 +1,24 @@
+import java.util.*;
+public class Fake{
+    public static void main(String args[]){
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the n:");
+        int n=s.nextInt();
+        for(int i=0;i<n;i++){
+            int p=s.nextInt();
+            if(1900<=p){
+               System.out.println("Division 1");
+            }
+            if(1600<=p && p<=1899){
+               System.out.println("Division 2");
+            }
+            if(1400<=p && p<=1599){
+               System.out.println("Division 3");
+            }
+            if(p<=1399){
+              System.out.println("Division 4");
+            }
+        }
+        
+    }
+}
